@@ -1,7 +1,6 @@
 # Chirimoya
 ## Presentation software based on Angular
 
-<hr>
 
 ## Warning
 
