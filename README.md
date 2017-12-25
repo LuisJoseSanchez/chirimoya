@@ -1,3 +1,5 @@
+<img src="img/chirimoya.svg" width="200">
+
 # Chirimoya
 ## Presentation software based on Angular
 
@@ -8,7 +10,6 @@ Chirimoya is under active development and hasn't yet reached its final form.
 
 ## TODO
 
-* Logo
 * Fancy themes
 * Several cursors
 * Transitions
