@@ -80,6 +80,15 @@ Given the presentation is an Angular project, you can insert Angular components 
 </slide>
 ```
 
+Chirimoya also have [Font Awesome Icons](http://fontawesome.io/icons/) pre-installed.
+
+```html
+<slide>
+  <h1>Paper plane icon</h1>
+  <fa name="paper-plane fa-5x"></fa>
+</slide>
+```
+
 ## TODO
 
 * More themes
