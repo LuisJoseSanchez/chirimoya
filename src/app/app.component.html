@@ -2,8 +2,7 @@
   id="presentation"
   [theme]="'light'"
   [showProgressBar]="true"
-  [cursorType]="'angle'"
-  [cursorPosition]="'left-right'">
+  [cursorType]="'angle'">
 
   <slide>
     <img src="./assets/img/chirimoya.svg" width="400px">
@@ -47,11 +46,10 @@
   theme: light, dark
   showProgressBar: true, false
   cursorType: angle, angle-animated, arrow, arrow-animated, triangle
-  cursorPosition: botton-right, botton-center, left-right
 
   IMPORTANT: Notice the simple quotes for strings.
   For example:
-    [cursorType]="'arrow'" IS CORRECT
-    [cursorType]="arrow" IS INCORRECT
+    [theme]="'dark'" IS CORRECT
+    [theme]="dark" IS INCORRECT
 
 -->

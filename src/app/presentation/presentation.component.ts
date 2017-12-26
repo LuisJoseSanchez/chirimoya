@@ -3,7 +3,8 @@ import { SlidesService } from '../shared/slides.service';
 
 enum KEY_CODE {
   RIGHT_ARROW = 39,
-  LEFT_ARROW = 37
+  LEFT_ARROW = 37,
+  SPACE = 32
 }
 
 @Component({
@@ -33,12 +34,15 @@ export class PresentationComponent implements OnInit {
   keyEvent(event: KeyboardEvent) {
     console.log(event);
     
-    if (event.keyCode === KEY_CODE.RIGHT_ARROW) {
-      this.slidesService.goToNextSlide();
-    }
-
-    if (event.keyCode === KEY_CODE.LEFT_ARROW) {
-      this.slidesService.goToPreviousSlide();
+    switch(event.keyCode) {
+      case KEY_CODE.RIGHT_ARROW:
+      case KEY_CODE.SPACE:
+        this.slidesService.goToNextSlide();
+        break;
+      case KEY_CODE.LEFT_ARROW:
+        this.slidesService.goToPreviousSlide();
+        break;
+      default:
     }
   }
 

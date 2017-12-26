@@ -40,16 +40,16 @@ p {
 
 #previous {
   position: absolute;
-  left: 32px;
-  top: 50%;
+  right: 80px;
+  bottom: 28px;
   text-align: center;
   text-shadow: 2px 2px 3px #999;
 }
 
 #next {
   position: fixed;
-  right: 32px;
-  top: 50%;
+  right: 30px;
+  bottom: 28px;
   text-align: center;
   text-shadow: 2px 2px 3px #999;
 }
