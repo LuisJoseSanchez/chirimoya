@@ -55,7 +55,7 @@ export class PresentationComponent implements OnInit {
         require("style-loader!./../themes/dark.scss");
         break;
       default:
-      require("style-loader!./../themes/light.scss");
+        require("style-loader!./../themes/light.scss");
     }
   }
 }

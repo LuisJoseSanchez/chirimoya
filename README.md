@@ -1,20 +1,93 @@
 <img src="img/chirimoya.svg" width="200">
 
 # Chirimoya
-## Presentation software based on Angular
 
+## :computer: Presentation software based on Angular
 
-## Warning
+Chirimoya is a presentation made in Angular that you can use as a template to make your own presentation.
 
-Chirimoya is under active development and hasn't yet reached its final form.
+## :clipboard: Requirements
+
+1. NodeJS
+
+Download from <https://nodejs.org>
+
+2. Angular CLI
+
+```console
+sudo npm install -g @angular/cli
+```
+
+## :green_book: Instructions
+
+1. Download Chirimoya
+
+```console
+git clone https://github.com/LuisJoseSanchez/chirimoya.git
+```
+
+2. Launch presentation
+
+```console
+cd chirimoya
+ng serve
+```
+
+Go to <http://localhost:4200/>
+
+3. :pencil: Edit `src/app/app.component.html`
+
+Use your favorite editor to modify the file `app.component.html` to make your presentation.
+
+## :triangular_ruler: Format
+
+The format of the presentation is very simple, it starts with `<presentation>` and ends with `</presentation>`. In the middle, you have slides delimited by `<slide>` and `</slide>`. Each slide can be filled with any HTML code.
+
+Example:
+
+```html
+<presentation>
+
+  <slide>
+    <h1>Chirimoya</h1>
+    <h2>Presentation software based on Angular</h2>
+  </slide>
+
+  <slide>
+    <h1>Slide 2</h1>
+    <p>Lorem fistrum de la pradera condemor qué dise usteer diodenoo.</p>
+  </slide>
+
+  <slide>
+    <h1>Unordered list</h1>
+    <ul>
+      <li>Benemeritaarapetecan al ataquerl. </li>
+      <li>Condemor mamaar.</li>
+      <li>No te digo trigo por no llamarte Rodrigor</li>
+      <li>A gramenawer de la pradera</li>
+    </ul>
+  </slide>
+
+</presentation>
+```
+
+Given the presentation is an Angular project, you can insert Angular components inside the slides :sunglasses:
+
+```html
+<slide>
+  <h1>USD-EUR Converter</h1>
+  <usd-eur-converter></usd-eur-converter>
+</slide>
+```
 
 ## TODO
 
-* Fancy themes
-* Several cursors
-* Transitions
-* Documentation
+* More themes
+* Several transitions
+* Segments
 
 ## Thanks
 
 I want to thank the amazing [Angular Málaga community](https://www.meetup.com/es-ES/Angular-Malaga/) for their support and advices.
+
+If you like this repo, please give a :star:
