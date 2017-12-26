@@ -8,11 +8,11 @@ Chirimoya is a presentation made in Angular that you can use as a template to ma
 
 ## :clipboard: Requirements
 
-1. NodeJS
+### 1. NodeJS
 
 Download from <https://nodejs.org>
 
-2. Angular CLI
+### 2. Angular CLI
 
 ```console
 sudo npm install -g @angular/cli
@@ -20,13 +20,13 @@ sudo npm install -g @angular/cli
 
 ## :green_book: Instructions
 
-1. Download Chirimoya
+### 1. Download Chirimoya
 
 ```console
 git clone https://github.com/LuisJoseSanchez/chirimoya.git
 ```
 
-2. Launch presentation
+### 2. Launch presentation
 
 ```console
 cd chirimoya
@@ -35,7 +35,7 @@ ng serve
 
 Go to <http://localhost:4200/>
 
-3. :pencil: Edit `src/app/app.component.html`
+### 3. :pencil: Edit `src/app/app.component.html`
 
 Use your favorite editor to modify the file `app.component.html` to make your presentation.
 
