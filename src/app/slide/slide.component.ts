@@ -3,10 +3,20 @@ import { PresentationComponent } from '../presentation/presentation.component';
 import { SlidesService } from '../shared/slides.service';
 import { ViewChild } from '@angular/core/src/metadata/di';
 
+import { trigger, state, style, animate, transition } from '@angular/animations';
+
 @Component({
   selector: 'slide',
   templateUrl: './slide.component.html',
-  styleUrls: ['./slide.component.scss']
+  styleUrls: ['./slide.component.scss'],
+  animations: [
+    trigger('animation',[
+      /*
+      state('minusculo', style({ transform: 'scale(0.1)'})),
+      transition('void => minusculo', animate('1000ms'))*/
+      transition(':enter', [style({ opacity: 0 }), animate('666ms')])
+    ])
+  ]
 })
 export class SlideComponent implements OnInit {
 
