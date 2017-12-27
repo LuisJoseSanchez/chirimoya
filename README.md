@@ -1,8 +1,8 @@
-<img src="img/chirimoya.svg" width="200">
-
-# Chirimoya
-
-## :computer: Presentation software based on Angular
+<p align="center">
+	<img src="img/chirimoya.svg" width="200">
+	<h1>Chirimoya</h1>
+	<h2>Presentation software based on Angular</h2>
+</p>
 
 Chirimoya is a presentation made in Angular that you can use as a template to make your own presentation.
 
