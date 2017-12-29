@@ -13,13 +13,15 @@ import { PresentationComponent } from './presentation/presentation.component';
 
 import { SlidesService } from './shared/slides.service';
 import { SourceCodeComponent } from './source-code/source-code.component';
+import { UsdEurConverterComponent } from './usd-eur-converter/usd-eur-converter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SlideComponent,
     PresentationComponent,
-    SourceCodeComponent
+    SourceCodeComponent,
+    UsdEurConverterComponent
   ],
   imports: [
     BrowserModule,

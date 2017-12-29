@@ -10,25 +10,40 @@ export class AppComponent {
   consoleCode1 = 'git clone https://github.com/LuisJoseSanchez/chirimoya';
   
   consoleCode2 = `
-  cd chirimoya
-  npm install
+cd chirimoya
+npm install
   `;
 
-  consoleCode3 = `
-  ng serve
-  `;
+  consoleCode3 = `ng serve`;
+
+  presentationCode = `  <presentation>
+    <slide>
+      <h1>My presentation</h1>
+      <p>Ese pedazo de ese hombree fistro.</p>
+    </slide>
+
+    <slide>
+      <p>Lorem ipsum</p>
+    </slide>
+  </presentation>`;
 
   htmlCode = `
-  <h1>Hola</h1>
+  <h1>Hello</h1>
   <p>fistrum pecador</p>
   `;
   
   javaCode = `
-  public class HolaMundo { // Clase principal
+  public class HelloWorld {
     public static void main(String[] args) {
-      System.out.println("¡Hola mundo!");
+      System.out.println("Hello world!");
     }
   }
+  `;
+
+  usdEurConverter = `
+  <slide>
+    <usd-eur-converter></usd-eur-converter>
+  </slide>
   `;
 
 }

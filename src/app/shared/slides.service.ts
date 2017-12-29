@@ -29,11 +29,10 @@ export class SlidesService {
     }
   }
 
+  /*
   setNumbersToSourceCode() {
     let i = 1;
     for (let slide of this.slides) {
-      console.log('Slide ' + i);
-      console.log(slide);
       if (slide.source) {
         for (let source of slide.source) {
           source.slideNumber = i;
@@ -41,7 +40,7 @@ export class SlidesService {
       }
       i++;
     }
-  }
+  }*/
 
   setCurrentSlideNumber(sn: number) {
     this.currentSlideNumber = sn;
@@ -68,6 +67,5 @@ export class SlidesService {
       this.currentSlideNumber++;
     }
     this.currentSlideNumber$.next(this.currentSlideNumber);
-    //console.log('slideService.goToNextSlide() -> this.currentSlideNumber: ' + this.currentSlideNumber);
   }
 }

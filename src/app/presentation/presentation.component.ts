@@ -25,7 +25,7 @@ export class PresentationComponent implements OnInit {
     this.slidesService.initNumberOfSlides();
     this.slidesService.loadSlides();
     this.slidesService.setNumbersToSlides();
-    this.slidesService.setNumbersToSourceCode();
+    //this.slidesService.setNumbersToSourceCode();
     this.slidesService.setCurrentSlideNumber(1);
     this.applyTheme();
 
@@ -33,8 +33,6 @@ export class PresentationComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    console.log(event);
-    
     switch(event.keyCode) {
       case KEY_CODE.RIGHT_ARROW:
       case KEY_CODE.SPACE:
