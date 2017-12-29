@@ -8,7 +8,7 @@ export class SlidesService {
   //currentSlideNumber: number;
   numberOfSlides: number;
   slides;
-  
+
   currentSlideNumber = 1;
   currentSlideNumber$ = new Subject();
 
@@ -29,9 +29,21 @@ export class SlidesService {
     }
   }
 
+  setNumbersToSourceCode() {
+    let i = 1;
+    for (let slide of this.slides) {
+      console.log('Slide ' + i);
+      console.log(slide);
+      if (slide.source) {
+        for (let source of slide.source) {
+          source.slideNumber = i;
+        }
+      }
+      i++;
+    }
+  }
+
   setCurrentSlideNumber(sn: number) {
-    //this.currentSlideNumber = sn;
-    //this.showCurrentSlide();
     this.currentSlideNumber = sn;
     this.currentSlideNumber$.next(sn);
   }
@@ -44,37 +56,18 @@ export class SlidesService {
     this.numberOfSlides = ns;
   }
 
-  /*
-  showCurrentSlide() {
-    this.hideAllSlides();
-    console.log('showCurrentSlide()');
-    
-    //this.slides[this.currentSlideNumber - 1].hidden = false;
-    //document.getElementsByTagName('slide')[0].setAttribute('hidden', 'false');
-    console.log(this.slides);
-  }*/
-/*
-  hideAllSlides() {
-    //this.loadSlides();
-    for (let slide of this.slides) {
-      slide.hidden = true;
-    }
-  }
-*/
   goToPreviousSlide() {
-    if (this.currentSlideNumber > 1 ) {
+    if (this.currentSlideNumber > 1) {
       this.currentSlideNumber--;
     }
     this.currentSlideNumber$.next(this.currentSlideNumber);
-    //this.showCurrentSlide();
   }
 
   goToNextSlide() {
-    if (this.currentSlideNumber < this.numberOfSlides ) {
+    if (this.currentSlideNumber < this.numberOfSlides) {
       this.currentSlideNumber++;
     }
     this.currentSlideNumber$.next(this.currentSlideNumber);
-    console.log('slideService.goToNextSlide() -> this.currentSlideNumber: ' + this.currentSlideNumber);
-    //this.showCurrentSlide();
+    //console.log('slideService.goToNextSlide() -> this.currentSlideNumber: ' + this.currentSlideNumber);
   }
 }

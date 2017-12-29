@@ -24,7 +24,8 @@ export class PresentationComponent implements OnInit {
   ngOnInit() {
     this.slidesService.initNumberOfSlides();
     this.slidesService.loadSlides();
-    this.slidesService.setNumbersToSlides()
+    this.slidesService.setNumbersToSlides();
+    this.slidesService.setNumbersToSourceCode();
     this.slidesService.setCurrentSlideNumber(1);
     this.applyTheme();
 

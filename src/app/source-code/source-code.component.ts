@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
+import { SlidesService } from '../shared/slides.service';
 
 @Component({
   selector: 'source-code',
@@ -7,13 +8,25 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SourceCodeComponent implements OnInit {
 
+//  slideNumber;
+//  visible;
+  
   @Input()
   code: string = '';
 
-  constructor() { }
+  constructor(
+  //  private slidesService: SlidesService,
+  //  private element: ElementRef
+  ) { }
 
   ngOnInit() {
+    /*
+    console.log('Dentro de source.ts - nativeElement:');
+    console.log(this.element.nativeElement);
 
+    this.slideNumber = this.element.nativeElement.slideNumber;
+    this.visible = (this.slideNumber === 1);
+*/
     /*
     setTimeout(() => {
       const element = document.querySelector('#source-code');
