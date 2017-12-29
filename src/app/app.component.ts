@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
 
+  consoleCode1 = 'git clone https://github.com/LuisJoseSanchez/chirimoya';
+  
+  consoleCode2 = `
+  cd chirimoya
+  npm install
+  `;
+
+  consoleCode3 = `
+  ng serve
+  `;
+
   htmlCode = `
   <h1>Hola</h1>
   <p>fistrum pecador</p>
