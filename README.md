@@ -26,16 +26,22 @@ sudo npm install -g @angular/cli
 git clone https://github.com/LuisJoseSanchez/chirimoya.git
 ```
 
-### 2. Launch presentation
+### 2. Install dependencies
 
 ```console
 cd chirimoya
+npm install
+```
+
+### 3. Launch presentation
+
+```console
 ng serve
 ```
 
 Go to <http://localhost:4200/>
 
-### 3. :pencil: Edit `src/app/app.component.html`
+### 4. :pencil: Edit `src/app/app.component.html`
 
 Use your favorite editor to modify the file `app.component.html` to make your presentation.
 
