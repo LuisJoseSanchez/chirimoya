@@ -116,8 +116,17 @@ Given the presentation is an Angular project, you can insert Angular components 
 </slide>
 ```
 
+## :wrench: Build the presentation
 
-## TODO
+To build the presentation type the following:
+
+```console
+ng build --prod --base-href ./
+```
+
+Your presentation will be in `dist` folder. You can launch it by double-clicking on `index.html`
+
+## :clipboard: TODO
 
 * More themes
 * Several transitions
