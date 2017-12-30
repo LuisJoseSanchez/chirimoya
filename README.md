@@ -134,6 +134,7 @@ Your presentation will be in `dist` folder. You can launch it by double-clicking
 
 ## :clipboard: TODO
 
+* Editable source code inside a slide
 * More themes
 * Several transitions
 * Segments
