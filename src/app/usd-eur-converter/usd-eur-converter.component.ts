@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsdEurConverterComponent implements OnInit {
 
+  usd = 0;
+  eur = 0;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  updateEuros() {
+    this.eur = this.usd * 0.833;
+  }
+
+  updateUsd() {
+    this.usd = this.eur / 0.833;
+  }
 }

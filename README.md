@@ -80,7 +80,7 @@ Chirimoya has [Font Awesome Icons](http://fontawesome.io/icons/) pre-installed.
 </slide>
 ```
 
-Code highlight is another feature thanks to [Angular Highlight.js](https://murhafsousli.github.io/ngx-highlightjs/)
+Code highlight is another feature of Chirimoya thanks to [Angular Highlight.js](https://murhafsousli.github.io/ngx-highlightjs/)
 
 `app.component.html`
 

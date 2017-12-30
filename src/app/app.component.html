@@ -37,16 +37,6 @@
   </slide>
 
   <slide>
-    <h1>Code highlight</h1>
-    <source-code [code]="htmlCode" [language]="'html'"></source-code>
-  </slide>
-  
-  <slide>
-    <h1>Code highlight</h1>
-    <source-code [code]="javaCode" [language]="'java'"></source-code>
-  </slide>
-
-  <slide>
     <h1>Font a. icons</h1>
     <p>
       <fa name="snowflake-o fa-3x"></fa>
@@ -98,6 +88,25 @@
   </slide>
 
   <slide>
+    <h1>Code highlight</h1>
+    <source-code [code]="htmlCode" [language]="'html'"></source-code>
+  </slide>
+  
+  <slide>
+    <code>app.component.html</code>
+    <source-code [code]="highlight1" [language]="'html'"></source-code>
+  </slide>
+
+  <slide>
+    <code>app.component.ts</code>
+    <source-code [code]="highlight2" [language]="'typescript'"></source-code>
+  </slide>
+
+  <slide>
+    <source-code [code]="javaCode" [language]="'java'"></source-code>
+  </slide>
+
+  <slide>
     <p>This is Angular, so you can insert your own components inside the slides</p>
     <source-code [code]="usdEurConverter" [language]="'html'"></source-code>
   </slide>
@@ -108,9 +117,13 @@
   </slide>
 
   <slide>
+    <img src="./assets/img/awesome.jpg" alt="">
+  </slide>
+
+  <slide>
     <h1>Build presentation</h1>
     <source-code [code]="'ng build --prod --base-href ./'"></source-code>
-    Your presentation is in <b>dist</b> folder.
+    Your presentation is in <b>dist</b> folder. You can launch it by double-clicking on <b>index.html</b>
   </slide>
 </presentation>
 

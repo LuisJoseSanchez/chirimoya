@@ -7,6 +7,8 @@ import { HighlightModule } from 'ngx-highlightjs';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { SlideComponent } from './slide/slide.component';
 import { PresentationComponent } from './presentation/presentation.component';
@@ -27,7 +29,8 @@ import { UsdEurConverterComponent } from './usd-eur-converter/usd-eur-converter.
     BrowserModule,
     AngularFontAwesomeModule,
     BrowserAnimationsModule,
-    HighlightModule.forRoot({theme: 'rainbow'})
+    HighlightModule.forRoot({theme: 'rainbow'}),
+    FormsModule
   ],
   providers: [SlidesService],
   bootstrap: [AppComponent]
