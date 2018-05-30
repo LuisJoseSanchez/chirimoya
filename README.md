@@ -136,6 +136,7 @@ Default transition is **fade**. Transition type can be set at presentation level
   <slide [transition]="scroll">
     <p>Scroll transition applied</p>
   </slide>
+
 </presentation>
 ```
 
