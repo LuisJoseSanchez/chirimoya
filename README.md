@@ -4,7 +4,7 @@
   <h2 align="center">Presentation software based on Angular</h2>
 </p>
 
-Chirimoya is a presentation made in Angular that you can use as a template to make your own presentation. Check out the <a target="_blank"  href="https://rawgit.com/LuisJoseSanchez/chirimoya/master/dist/index.html">live demo</a>.
+Chirimoya is a presentation made in Angular that you can use as a template to make your own presentation. Check out the <a target="_blank"  href="https://rawgit.com/LuisJoseSanchez/chirimoya/master/dist/chirimoya/index.html">live demo</a>.
 
 ## :clipboard: Requirements
 
