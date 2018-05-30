@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  background: black;
+  background-color: black;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 42px;
+  font-weight: normal;
+  color: lightgrey;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+h3, h4 {
+  text-transform: none;
+}
+
+h1 {
+  color: #20a549;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+#previous {
+  color: #20a549;
+}
+
+#next {
+  color: #20a549;
+}
+
+code {
+  font-family: monospace;
+}
+
+pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}

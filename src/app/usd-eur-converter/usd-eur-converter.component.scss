@@ -1,0 +1,15 @@
+.usd-eur-converter {
+  display: flex;
+  padding: 12px;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  color: gray;
+  font-size: 1.1em;
+  width: 169px;
+}

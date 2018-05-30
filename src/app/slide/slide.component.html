@@ -1,0 +1,21 @@
+<div
+  class="slide"
+  *ngIf="visible"
+  [@animation]>
+
+  <ng-content></ng-content>
+
+  <div
+    id="previous"
+    *ngIf="!thisIsTheFirstSlide"
+    (click)="goToPreviousSlide()">
+    <fa name="angle-left fa-3x"></fa>
+  </div>
+  
+  <div
+    id="next"
+    *ngIf="!thisIsTheLastSlide"
+    (click)="goToNextSlide()">
+    <fa name="angle-right fa-3x"></fa>
+  </div>
+</div>
