@@ -12,6 +12,7 @@ import { SlideComponent } from './slide/slide.component';
 import { SourceCodeComponent } from './source-code/source-code.component';
 import { UsdEurConverterComponent } from './usd-eur-converter/usd-eur-converter.component';
 import { SlidesService } from './slides.service';
+import { RandomNumberGeneratorComponent } from './random-number-generator/random-number-generator.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SlidesService } from './slides.service';
     PresentationComponent,
     SlideComponent,
     SourceCodeComponent,
-    UsdEurConverterComponent
+    UsdEurConverterComponent,
+    RandomNumberGeneratorComponent
   ],
   imports: [
     BrowserModule,
