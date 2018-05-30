@@ -25,6 +25,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "ngx-highlightjs": "^2.0.2",
+    "node-sass": "^4.9.0",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
