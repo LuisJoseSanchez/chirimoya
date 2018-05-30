@@ -24,7 +24,6 @@ presentation {
 .slide {
   margin: 0px;
   text-align: center;
-  /*vertical-align: middle;*/
 }
 
 
@@ -59,4 +58,8 @@ p {
   bottom: 28px;
   text-align: center;
   text-shadow: 2px 2px 3px #999;
+}
+
+.circle {
+  border-radius: 50%;
 }

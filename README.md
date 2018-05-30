@@ -113,6 +113,32 @@ export class AppComponent {
 }
 ```
 
+There are several types of transition between slides:
+
+* Fade
+* Zoom
+* Scroll
+* None
+
+Default transition is **fade**. Transition type can be set at presentation level and can be overwritten at slide level.
+
+```html
+<presentation [transition]="fade">
+    
+  <slide>
+    <p>Fade transition applied</p>
+  </slide>
+  
+  <slide [transition]="zoom">
+    <p>Zoom transition applied</p>
+  </slide>
+
+  <slide [transition]="scroll">
+    <p>Scroll transition applied</p>
+  </slide>
+</presentation>
+```
+
 Given the presentation is an Angular project, you can insert Angular components inside the slides :sunglasses:
 
 ```html
@@ -136,7 +162,7 @@ Your presentation will be in `dist` folder. You can launch it by double-clicking
 
 * Editable source code inside a slide
 * More themes
-* Several transitions
+* More transition types
 * Segments
 
 ## Thanks

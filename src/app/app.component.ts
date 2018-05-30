@@ -40,14 +40,12 @@ npm install
 
 
   highlight2 = `
-export class AppComponent {
   javaCode = \`
   public class HelloWorld {
     public static void main(String[] args) {
       System.out.println("Hello world!");
     }
-  }\`;
-}`;
+  }\`;`;
 
   javaCode = `
   public class HelloWorld {
@@ -62,6 +60,31 @@ export class AppComponent {
     <h1>USD - EUR Converter</h1>
     <usd-eur-converter></usd-eur-converter>
   </slide>
+  `;
+
+  htmlCodeZoomPresentation = `
+  <presentation [transition]="zoom">
+    
+
+  </presentation>
+  `;
+
+  htmlCodeZoomSlide = `
+  <slide [transition]="zoom">
+    
+
+  </slide>
+  `;
+
+  htmlCodeScroll = `
+  <slide [transition]="scroll">
+    
+
+  </slide>
+  `;
+
+  buildCode = `
+  ng build --prod --base-href ./
   `;
 
 }

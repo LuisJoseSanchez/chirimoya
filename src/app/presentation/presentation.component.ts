@@ -15,6 +15,7 @@ enum KEY_CODE {
 export class PresentationComponent implements OnInit {
 
   @Input() theme: string;
+  @Input() transition: string;
   @Input() showProgressBar: boolean;
   @Input() cursorType: string;
   @Input() cursorPosition: string;
@@ -22,6 +23,7 @@ export class PresentationComponent implements OnInit {
   constructor(private slidesService: SlidesService) { }
 
   ngOnInit() {
+    this.slidesService.setTransition(this.transition);
     this.slidesService.initNumberOfSlides();
     this.slidesService.loadSlides();
     this.slidesService.setNumbersToSlides();

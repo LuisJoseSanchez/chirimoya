@@ -1,4 +1,4 @@
-<presentation [theme]="'light'">
+<presentation [theme]="'light'" [transition]="'fade'">
 
   <slide>
     <img src="./assets/img/chirimoya.svg" width="400px">
@@ -87,11 +87,32 @@
     </div>
   </slide>
 
+
+  <slide>
+    <h1>Transitions</h1>
+    <h2>fade - zoom - scroll - none</h2>
+  </slide>
+
+  <slide [transition]="'zoom'">
+    <h1>Transitions</h1>
+    <source-code [code]="htmlCodeZoomPresentation" [language]="'html'"></source-code>
+  </slide>
+
+  <slide [transition]="'zoom'">
+    <h1>Transitions</h1>
+    <source-code [code]="htmlCodeZoomSlide" [language]="'html'"></source-code>
+  </slide>
+
+  <slide [transition]="'scroll'">
+    <h1>Transitions</h1>
+    <source-code [code]="htmlCodeScroll" [language]="'html'"></source-code>
+  </slide>
+
   <slide>
     <h1>Code highlight</h1>
     <source-code [code]="htmlCode" [language]="'html'"></source-code>
   </slide>
-  
+
   <slide>
     <code>app.component.html</code>
     <source-code [code]="highlight1" [language]="'html'"></source-code>
@@ -107,7 +128,7 @@
   </slide>
 
   <slide>
-    <p>This is Angular, so you can insert your own components inside the slides</p>
+    <p>You can insert your own Angular components inside the slides</p>
     <source-code [code]="usdEurConverter" [language]="'html'"></source-code>
   </slide>
 
@@ -127,12 +148,23 @@
 
   <slide>
     <h1>Build presentation</h1>
-    <source-code [code]="'ng build --prod --base-href ./'"></source-code>
-    Your presentation will be in <b>dist</b> folder. You can launch it by double-clicking on <b>index.html</b>
+    <source-code [code]="buildCode" [language]="'console'"></source-code>
+    <p>
+      Your presentation will be in
+      <b>dist</b> folder.
+    </p>
+    <p>Launch it by double-clicking on
+      <b>index.html</b>
+    </p>
   </slide>
 
   <slide>
     <h1>Thanks!</h1>
+  </slide>
+
+  <slide>
+    <img class="circle" width="200px" src="./assets/img/luisjose.jpg" alt="">
+    <h3><fa name="twitter"></fa> @luisjoseprofe</h3>
   </slide>
 
 </presentation>

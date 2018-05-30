@@ -10,6 +10,8 @@ export class SlidesService {
 
   currentSlideNumber = 1;
   currentSlideNumber$ = new Subject();
+
+  transition: string;
   
   constructor() { }
 
@@ -53,5 +55,13 @@ export class SlidesService {
       this.currentSlideNumber++;
     }
     this.currentSlideNumber$.next(this.currentSlideNumber);
+  }
+
+  setTransition(t: string) {
+    this.transition = t;
+  }
+
+  getTransition() {
+    return this.transition;
   }
 }
