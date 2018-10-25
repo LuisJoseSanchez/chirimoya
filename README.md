@@ -16,6 +16,7 @@ In Ubuntu, you can install NodeJS typing:
 
 ```console
 sudo apt install nodejs
+sudo apt install npm
 ```
 
 ### 2. Angular CLI
