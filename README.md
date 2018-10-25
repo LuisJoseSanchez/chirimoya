@@ -12,6 +12,12 @@ Chirimoya is a presentation made in Angular that you can use as a template to ma
 
 Download from <https://nodejs.org>
 
+In Ubuntu, you can install NodeJS typing:
+
+```console
+sudo apt install nodejs
+```
+
 ### 2. Angular CLI
 
 ```console
